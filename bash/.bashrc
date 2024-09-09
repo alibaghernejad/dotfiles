@@ -20,6 +20,8 @@ mcd () {
     cd $1
 }
 
+alias ads='exec /opt/azure-data-studio/bin/azuredatastudio "$@" $ADS_USER_FLAGS'
+
 function ext {
  if [ -z "$1" ]; then
     # display usage if no parameters given
