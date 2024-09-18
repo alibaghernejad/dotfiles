@@ -16,6 +16,7 @@ alias opn='xdg-open'
 alias g='git'
 alias aqu='asciiquarium'
 alias dot='cd ~/dotfiles'
+alias zk='cd ~/Zettelkasten'
 
 mcd () {
     mkdir -p $1
