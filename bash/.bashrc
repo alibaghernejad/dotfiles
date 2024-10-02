@@ -14,6 +14,7 @@ PS1='[\u@\h \W]\$ '
 
 alias opn='xdg-open'
 alias g='git'
+alias ga='git add'
 alias aqu='asciiquarium'
 alias dot='cd ~/dotfiles'
 alias zk='cd ~/Zettelkasten'
