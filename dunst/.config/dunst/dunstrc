@@ -485,6 +485,7 @@
 #
 # vim: ft=cfg
 #
+#==========Catppuccin Latte===========#
 [global]
 frame_color = "#1e66f5"
 separator_color= frame
