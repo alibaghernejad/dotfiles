@@ -16,6 +16,8 @@ alias opn='xdg-open'
 alias g='git'
 alias ga='git add'
 alias gaa='git add --all'
+# Commiting only specified part of files or breaking lange commit into smaller parts.
+alias gapa='git add --patch'
 alias aqu='asciiquarium'
 alias dot='cd ~/dotfiles'
 alias zk='cd ~/Zettelkasten'
