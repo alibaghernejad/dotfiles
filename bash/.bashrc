@@ -36,7 +36,7 @@ alias gapt='git apply --3way'
 alias gbs='git bisect'
 alias gbss='git bisect'
 alias gbsb='git bisect bad'
-
+alias gbsg='git bisect good'
 alias aqu='asciiquarium'
 alias dot='cd ~/dotfiles'
 alias zk='cd ~/Zettelkasten'
