@@ -39,7 +39,12 @@ alias gbsb='git bisect bad'
 alias gbsg='git bisect good'
 alias aqu='asciiquarium'
 alias dot='cd ~/dotfiles'
+
+# Zettelkasten shortkey
 alias zk='cd ~/Zettelkasten'
+
+# NeoVim Shortkey
+alias v='nvim'
 
 mcd () {
     mkdir -p $1
