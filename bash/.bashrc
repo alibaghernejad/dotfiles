@@ -38,6 +38,8 @@ alias gbss='git bisect'
 alias gbsb='git bisect bad'
 alias gbsg='git bisect good'
 alias aqu='asciiquarium'
+
+# dotfiles shortkey
 alias dot='cd ~/dotfiles'
 
 # Zettelkasten shortkey
