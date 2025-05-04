@@ -17,7 +17,7 @@ set $mod Mod4
 # Execute picom binary to prevent screan tearing
 exec --no-startup-id picom
 #exec_always feh --bg-scale ~/.config/backgrounds/nice-blue-background.png
-exec_always feh --bg-scale ~/.config/backgrounds/mountain.png
+exec_always feh --bg-scale ~/.config/backgrounds/chicago-city.jpg
 
 # open rofi in combi mode
 # See ~/.config/rofi/config.rasi and then "display-combi"
