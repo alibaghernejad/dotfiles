@@ -55,6 +55,9 @@ mcd () {
 
 alias ads='exec /opt/azure-data-studio/bin/azuredatastudio "$@" $ADS_USER_FLAGS'
 
+# source fzf bindings into the shell emulator
+source <(fzf --bash)
+
 function ext {
  if [ -z "$1" ]; then
     # display usage if no parameters given
