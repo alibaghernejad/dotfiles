@@ -9,6 +9,8 @@
 alias ls='ls  --color=auto' 
 alias ldot='ls -ld .*'
 alias ll='ls -latr'
+alias lsr='ls -lARFh' #Recursive list of files and directories
+
 alias grep='grep --color=auto'
 PS1='[\u@\h \W]\$ '
 
