@@ -22,13 +22,11 @@ provider=`printf "%s\n" "${menu[@]}" | fzf --header=$header`
 read -p "And the Url? " url
 IFS=";" read -r -a arr <<< "${DWNLDPROVIDERS[$provider]}"
 command="${arr[0]}"
-#filename=$(date +'%Y-%m-%d_%H-%M-%S')
-filename="$(basename "$url").ts"
 echo "Choosed Provider: ${provider}"
 echo "Backend: ${command}"
 
 if [[ $provider == "m3u8_stream" ]]; then
-  
+  filename="$(basename "$url").ts"
   bash -c "$command \"$url\" best --output \"$filename\"" 
 else
   bash -c "$command \"$url\"" 
