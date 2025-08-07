@@ -23,6 +23,15 @@ exec_always feh --bg-scale ~/.config/backgrounds/gruvbox.jpg
 # See ~/.config/rofi/config.rasi and then "display-combi"
 bindsym $mod+space exec rofi -show combi
 bindsym $mod+m exec ~/scripts/rofi_mic_toggle2.sh
+
+# Note-taking
+# Open a floating window for note-taking.
+# floating is set via window rule with the title of "Note-taking"
+# i3-sensible-terminal: return the best available terminal: alacritty for example
+# -e: run a custom command. in this case a script.
+# -T: set the title of the window
+for_window [ title="Note-taking" ] floating enable
+bindsym $mod+n exec i3-sensible-terminal -T Note-taking -e ~/dotfiles/scripts/noter.sh 
 #bindsym $mod+shift+e exec nautilus
 
 # Font for window titles. Will also be used by the bar unless a different font
