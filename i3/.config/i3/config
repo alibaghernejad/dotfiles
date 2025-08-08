@@ -32,6 +32,7 @@ bindsym $mod+m exec ~/scripts/rofi_mic_toggle2.sh
 # -T: set the title of the window
 for_window [ title="Note-taking" ] floating enable
 bindsym $mod+n exec i3-sensible-terminal -T Note-taking -e ~/dotfiles/scripts/noter.sh 
+bindsym $mod+Shift+n exec ~/dotfiles/scripts/last_note_prevue.sh
 #bindsym $mod+shift+e exec nautilus
 
 # Font for window titles. Will also be used by the bar unless a different font
