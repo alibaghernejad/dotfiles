@@ -3,20 +3,14 @@
 declare -A DWNLDPROVIDERS
 DWNLDPROVIDERS["m3u8_stream"]='streamlink;'
 DWNLDPROVIDERS["youtube"]='yt-dlp --cookies-from-browser firefox -f "best";'
-DWNLDTYPE=`echo "m3u8_stream YouTube" | tr ' ' '\n'`
 SAVELOC="$HOME/Downloads"
-#echo "$DWNLDTYPE"
-#echo ${DWNLDPROVIDERS[*]}
 
 header="What Download provider do you want to use?"
-#echo "selected: $selectedprovider"
-#echo "${DWNLDPROVIDERS["$selectedprovider"]}"
 
 oldIFS=$ISF
 IFS=";"
 menu=()
   for k in "${!DWNLDPROVIDERS[@]}";do
-#    IFS=";" read -r -a arr <<< "${p}"
 menu+=(`echo "$k"`)
   done
 IFS=$oldIFS
