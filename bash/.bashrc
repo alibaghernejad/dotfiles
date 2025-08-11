@@ -98,3 +98,5 @@ function ext {
     done
 fi
 }
+# add zoxide integration
+eval "$(zoxide init bash)"
