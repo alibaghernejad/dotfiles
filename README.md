@@ -8,8 +8,6 @@
 
 2. **Clone your fork**  
    Replace `<your-username>` with your GitHub username.
-
-   ** Linux / macOS**
    ```bash
    git clone https://github.com/<your-username>/dotfiles.git ~/dotfiles
 
