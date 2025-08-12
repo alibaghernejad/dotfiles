@@ -9,7 +9,7 @@ Awesome dotfiles used to customize and configure your environment on Unix-like s
 2. **Clone your fork**  
    Replace `<your-username>` with your GitHub username.
 
-   **macOS / Linux**
+   ** Linux / macOS**
    ```bash
    git clone https://github.com/<your-username>/dotfiles.git ~/dotfiles
 
