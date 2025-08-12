@@ -1,5 +1,5 @@
 # dotfiles
-Awesome dotfiles used to customize and configure your environment on Unix-like systems. (GNU/Linux, macOS) 
+**Awesome Dotfiles** — A curated set of configuration files to personalize and optimize your Unix-like environment (GNU/Linux, macOS).
 
 ## Recommended Setup
 
