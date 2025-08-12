@@ -22,7 +22,7 @@ exec_always feh --bg-scale ~/.config/backgrounds/gruvbox.jpg
 # open rofi in combi mode
 # See ~/.config/rofi/config.rasi and then "display-combi"
 bindsym $mod+space exec rofi -show combi
-bindsym $mod+m exec ~/scripts/rofi_mic_toggle2.sh
+bindsym $mod+m exec ~/dotfiles/scripts/audioctl/rofi_audioctl.sh
 
 # Note-taking
 # Open a floating window for note-taking.
