@@ -12,3 +12,10 @@ Awesome dotfiles used to customize and configure your environment on Unix-like s
    **macOS / Linux**
    ```bash
    git clone https://github.com/<your-username>/dotfiles.git ~/dotfiles
+
+3. **Navigate into the project**
+```shell
+   cd ~/dotfiles
+```
+
+4. **Proceed with installation/setup**
