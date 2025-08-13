@@ -14,13 +14,8 @@ alias lsr='ls -lARFh' #Recursive list of files and directories
 alias grep='grep --color=auto'
 PS1='[\u@\h \W]\$ '
 
-
-#=============== Environment Variables ===============
-
 # Enable vim key bindings for terminal.
 set -o vi 
-
-#=============== Aliases ===============
 
 alias opn='xdg-open'
 alias g='git'
@@ -98,5 +93,9 @@ function ext {
     done
 fi
 }
+
+# Add user specified binaries to the path 
+export PATH="$PATH:$HOME/.local/bin"
+
 # add zoxide integration
 eval "$(zoxide init bash)"
