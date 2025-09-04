@@ -31,6 +31,11 @@ vim.o.relativenumber = true -- set rnu/ set nornu
 -- Docs :help mouse
 vim.o.mouse = 'a'
 
+--===== Mode =====--
+-- Showing the mode.
+-- ou may Don't want to show the mode by setting it to false, since it's already in the status line
+vim.o.showmode = true
+
 local lazypath = vim.fn.stdpath("data") .. "/lazy/lazy.nvim"
 if not vim.loop.fs_stat(lazypath) then
   vim.fn.system({
