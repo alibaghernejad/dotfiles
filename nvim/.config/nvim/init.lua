@@ -36,6 +36,15 @@ vim.o.mouse = 'a'
 -- ou may Don't want to show the mode by setting it to false, since it's already in the status line
 vim.o.showmode = true
 
+--===== Clipboard =====--
+-- Sync clipboard between OS and Neovim.
+-- Schedule the setting after `UiEnter` because it can increase startup-time.
+-- Remove this option if you want your OS clipboard to remain independent.
+-- See `:help 'clipboard'`
+vim.schedule(function()
+  vim.o.clipboard = 'unnamedplus'
+end)
+
 local lazypath = vim.fn.stdpath("data") .. "/lazy/lazy.nvim"
 if not vim.loop.fs_stat(lazypath) then
   vim.fn.system({
