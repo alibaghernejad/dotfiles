@@ -13,7 +13,7 @@ vim.g.have_nerd_font = false
 -- NOTE: You can change these options as you wish!
 --  For more options, you can see `:help option-list`
 
--- Make line numbers default
+--===== Make line numbers default =====--
 -- + Standard line numbering
 -- + Relative Line numbering
 -- + hybrid line Numbering (Use both of the standard and relative line numbering together)
@@ -25,6 +25,11 @@ vim.o.number = true -- short command: set nu/ set nonu
 -- You can also add relative line numbers, to help with jumping.
 --  Experiment for yourself to see if you like it!
 vim.o.relativenumber = true -- set rnu/ set nornu
+
+--===== Mouse Support =====---
+-- Enable mouse mode, can be useful for resizing splits for example!
+-- Docs :help mouse
+vim.o.mouse = 'a'
 
 local lazypath = vim.fn.stdpath("data") .. "/lazy/lazy.nvim"
 if not vim.loop.fs_stat(lazypath) then
