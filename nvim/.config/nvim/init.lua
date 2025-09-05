@@ -45,6 +45,13 @@ vim.schedule(function()
   vim.o.clipboard = 'unnamedplus'
 end)
 
+
+--===== Diagnostic =====--
+-- SEE: `:help diagnostic`
+-- Quickfix list in Normal mode.
+vim.keymap.set('n', '<leader>q', vim.diagnostic.setloclist, { desc = 'Open diagnostic [Q]uickfix list' })
+-- Can run in command mode via `:lua vim.diagnostic.setloclist()` or `lopen`
+
 local lazypath = vim.fn.stdpath("data") .. "/lazy/lazy.nvim"
 if not vim.loop.fs_stat(lazypath) then
   vim.fn.system({
