@@ -36,6 +36,12 @@ vim.o.mouse = 'a'
 -- ou may Don't want to show the mode by setting it to false, since it's already in the status line
 vim.o.showmode = true
 
+--===== Options =====--
+-- Enable break indent
+-- The changes are actually visible when there is a long line of text and `wrap` is enable with `set wrap` or `vim.o.wrap = true`
+-- See: `:help breakindent`
+vim.o.breakindent = true
+
 --===== Clipboard =====--
 -- Sync clipboard between OS and Neovim.
 -- Schedule the setting after `UiEnter` because it can increase startup-time.
@@ -44,7 +50,6 @@ vim.o.showmode = true
 vim.schedule(function()
   vim.o.clipboard = 'unnamedplus'
 end)
-
 
 --===== Diagnostic =====--
 -- SEE: `:help diagnostic`
