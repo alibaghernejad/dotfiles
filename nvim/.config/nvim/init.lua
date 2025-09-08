@@ -1,4 +1,4 @@
-
+--test    
 -- Set <space> as the leader key
 -- See `:help mapleader`
 --  NOTE: Must happen before plugins are loaded (otherwise wrong leader will be used)
@@ -41,6 +41,17 @@ vim.o.showmode = true
 -- The changes are actually visible when there is a long line of text and `wrap` is enable with `set wrap` or `vim.o.wrap = true`
 -- See: `:help breakindent`
 vim.o.breakindent = true
+
+-- Save Undo History
+-- By default vim/nvim forget undo history once you close a file or program.
+-- By setting `undofile` option to `true`, nvim save undo history to file on disk 
+-- So that after reopening the file or the program, you can continue undo/redo your changes.
+vim.o.undofile = true 
+-- By enabling `undodile`, `undodir` located at`$HOME/local/state/nvim/undo` by default.
+-- Optionaly setting the location of the und file by uncommenting the below line.
+vim.o.undodir = vim.fn.stdpath("data") .. "/undo"
+-- Make sure the directory exists
+vim.fn.mkdir(vim.o.undodir, "p")
 
 --===== Clipboard =====--
 -- Sync clipboard between OS and Neovim.
