@@ -53,6 +53,9 @@ vim.o.undodir = vim.fn.stdpath("data") .. "/undo"
 -- Make sure the directory exists
 vim.fn.mkdir(vim.o.undodir, "p")
 
+-- Case-insensitive searching
+vim.o.ignorecase = true
+
 --===== Clipboard =====--
 -- Sync clipboard between OS and Neovim.
 -- Schedule the setting after `UiEnter` because it can increase startup-time.
