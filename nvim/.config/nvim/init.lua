@@ -56,6 +56,12 @@ vim.fn.mkdir(vim.o.undodir, "p")
 -- Case-insensitive searching
 vim.o.ignorecase = true
 
+-- But if the search contains capital letters, it becomes case-sensitive
+-- If you ant to FORCE case Sensivity, regardless of `smartcase` you can use
+-- `\C` in your query. `:/\CFoo` for example.
+vim.o.smartcase = true
+
+
 --===== Clipboard =====--
 -- Sync clipboard between OS and Neovim.
 -- Schedule the setting after `UiEnter` because it can increase startup-time.
