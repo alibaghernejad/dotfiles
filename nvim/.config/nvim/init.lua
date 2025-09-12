@@ -68,6 +68,16 @@ vim.o.smartcase = true
 -- See: `:help signs`
 vim.o.signcolumn = "yes"
 
+
+-- Decrease updatetime
+-- WHAT: Set the time (in ms), before Neovim trigger the `CursorHold` event and `Swap Out`changes to disk for swap files.
+-- WHY: Decreasing updatetime to 250ms makes plugins like `git signs`, `LSP Diagnosticss` or `Cursor hover docs` feels more responsive. (in compare to default 400ms (4 sec))
+-- Default: `4000` ms (4sec)
+-- See: `:help updatetime`
+-- See: `:help crash-recovery`
+-- See: `:help CursorHold`
+vim.o.updatetime = 250
+
 --===== Clipboard =====--
 -- Sync clipboard between OS and Neovim.
 -- Schedule the setting after `UiEnter` because it can increase startup-time.
