@@ -47,9 +47,11 @@ vim.o.breakindent = true
 -- By setting `undofile` option to `true`, nvim save undo history to file on disk 
 -- So that after reopening the file or the program, you can continue undo/redo your changes.
 vim.o.undofile = true 
+
 -- By enabling `undodile`, `undodir` located at`$HOME/local/state/nvim/undo` by default.
 -- Optionaly setting the location of the und file by uncommenting the below line.
 vim.o.undodir = vim.fn.stdpath("data") .. "/undo"
+
 -- Make sure the directory exists
 vim.fn.mkdir(vim.o.undodir, "p")
 
@@ -61,6 +63,10 @@ vim.o.ignorecase = true
 -- `\C` in your query. `:/\CFoo` for example.
 vim.o.smartcase = true
 
+-- Enable/disable sign-column. (Most-left column)
+-- where symbols like Git changes, diagnostics, breakpoints, etc. appear.
+-- See: `:help signs`
+vim.o.signcolumn = "yes"
 
 --===== Clipboard =====--
 -- Sync clipboard between OS and Neovim.
