@@ -78,6 +78,13 @@ vim.o.signcolumn = "yes"
 -- See: `:help CursorHold`
 vim.o.updatetime = 250
 
+-- Decrease mapped sequence wait time
+-- WHAT: Set the time (in ms) Neovim waits for a mapped key sequence to complete. 
+-- WHY: Makes key mapping (leader-based mappings for example) feels snappier. For <leader<q> that is a keymap for `Quick List Diagnostics`, means you must enter the sequence of charachtesrs in 300ms not 1000ms.
+-- Default: `1000` ms (1sec)
+-- See: `:help timeoutlen`
+vim.o.timeoutlen= 300
+
 --===== Clipboard =====--
 -- Sync clipboard between OS and Neovim.
 -- Schedule the setting after `UiEnter` because it can increase startup-time.
