@@ -85,6 +85,25 @@ vim.o.updatetime = 250
 -- See: `:help timeoutlen`
 vim.o.timeoutlen= 300
 
+--===== Windows =====--
+-- Configure split behavior
+-- vertical split
+-- new vertical split go right
+vim.o.splitright = true
+
+-- new vertical windows go left.
+-- Vertical splits (`:vsplit`) will open to the left of the current windows. (Instead of right)
+-- set nosplitright
+--
+-- horizontal split
+-- new horizontal split go up.
+-- See: `:vsplit` or `vsp`
+vim.o.splitbelow = true
+
+-- new horizontal windows go up.
+-- Horizontal splits (`:split`) will open above the current windows. (Instead of below)
+-- set nosplitbelow
+
 --===== Clipboard =====--
 -- Sync clipboard between OS and Neovim.
 -- Schedule the setting after `UiEnter` because it can increase startup-time.
