@@ -120,6 +120,13 @@ vim.opt.listchars = { tab = '» ', trail = '·', nbsp = '␣' }
 -- Preview substitutions live, as you type!
 vim.o.inccommand = 'split'
 
+-- Show which line your cursor is on
+-- It highlights the entire line, where the cursor is currently located.
+vim.o.cursorline = true
+-- Can be combined with the following option.
+-- vim.o.cursorcolumn = true
+-- The highlight color can be controlled via `CursorLine` Highlight group.
+-- vim.cmd [[highlight CursorLine guibg=#2a2a2a]]
 
 --===== Clipboard =====--
 -- Sync clipboard between OS and Neovim.
