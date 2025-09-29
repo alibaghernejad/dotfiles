@@ -128,6 +128,10 @@ vim.o.cursorline = true
 -- The highlight color can be controlled via `CursorLine` Highlight group.
 -- vim.cmd [[highlight CursorLine guibg=#2a2a2a]]
 
+-- Minimal number of screen lines to keep above and below the cursor.
+-- Makes navigation smoother and prevents the cursor from “hugging” the top or bottom edge of the window.
+vim.o.scrolloff = 10
+
 --===== Clipboard =====--
 -- Sync clipboard between OS and Neovim.
 -- Schedule the setting after `UiEnter` because it can increase startup-time.
