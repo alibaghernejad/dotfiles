@@ -1,6 +1,6 @@
 
 # Color Schema 
-theme = catppuccin-mocha
+theme = Catppuccin Mocha
 
 # Disable Titlebar and Windows Decorations.
 window-decoration = none
