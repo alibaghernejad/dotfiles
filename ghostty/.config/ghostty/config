@@ -1,7 +1,12 @@
+# Ghostty configuration file.
+# 
+# Load splited config files.
+config-file = ?vim.ghostty
 
 # Color Schema 
 theme = Catppuccin Mocha
 
 # Disable Titlebar and Windows Decorations.
 window-decoration = none
+
 
