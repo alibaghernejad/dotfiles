@@ -1,0 +1,21 @@
+# Vim-mode keybindings for Ghostty.
+#
+# Note: Not all of the vim features are available.
+# Planed on adding new functionalities in the future.
+
+# Entry-pint
+keybind = alt+v=activate_key_table:vim
+
+# Keybind table definition
+keybind = vim/
+
+# Line movement
+keybind = vim/j=scroll_page_lines:1
+keybind = vim/k=scroll_page_lines:-1
+
+# Exit vim mode
+keybind = vim/escape=activate_key_table:default
+
+
+
+
