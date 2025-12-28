@@ -17,6 +17,9 @@ PS1='[\u@\h \W]\$ '
 # Enable vim key bindings for terminal.
 set -o vi 
 
+# Alias vi if you have already vim.
+alias vi=vim
+
 alias opn='xdg-open'
 alias g='git'
 alias ga='git add'
