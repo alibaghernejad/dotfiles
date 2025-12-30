@@ -3,7 +3,7 @@
 declare -A DWNLDPROVIDERS
 DWNLDPROVIDERS["m3u8_stream"]='streamlink;'
 # IMPORTANT: CHANGE THE FIREFOX TO YOUR APPROPRIATE VALUE
-# It's used for youtibe auth.
+# It's used for youtube auth.
 DWNLDPROVIDERS["youtube"]='yt-dlp --cookies-from-browser firefox -f "best";'
 SAVELOC="$HOME/Downloads"
 
