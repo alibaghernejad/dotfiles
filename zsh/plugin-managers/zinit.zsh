@@ -7,5 +7,3 @@ ZINIT_HOME="${XDG_DATA_HOME:-${HOME}/.local/share}/zinit/zinit.git"
 
 # Source/Load zinit
 source "${ZINIT_HOME}/zinit.zsh"
-
-echo "end."
