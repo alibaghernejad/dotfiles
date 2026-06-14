@@ -1,0 +1,12 @@
+#
+# ==============================================================================
+# POSIX-COMPLIANT SHARED ALIASES
+# ==============================================================================
+
+# --- File & Directory Listing ---
+alias ls='ls --color=auto'
+alias ldot='ls -ld .'
+alias ll='ls -latr'
+alias lsr='ls -lARFh'
+alias grep='grep --color=auto'
+
