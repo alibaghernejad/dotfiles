@@ -27,5 +27,7 @@ DOTFILES_HOME_SCRIPTS="$DOTFILES_HOME/scripts"
 
 # Load Plugin manager
 source "${DOTFILES_HOME_ZSH_PLUGIN_MANAGERS}/zinit.zsh"
+# --- Aliases ---
+source "${DOTFILES_HOME}/shell-common/aliases"
 
 
