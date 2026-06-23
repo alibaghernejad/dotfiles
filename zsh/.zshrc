@@ -43,3 +43,7 @@ source ~/.snippet-store-completion
 
 zinit light zsh-users/zsh-completions
 
+# Use FZF Menu and Fuzzy Finding capability for completions.
+# Replaces already exists completion menu with a new FZF-powered one.
+zinit light Aloxaf/fzf-tab
+
