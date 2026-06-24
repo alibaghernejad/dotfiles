@@ -27,9 +27,19 @@ DOTFILES_HOME_SCRIPTS="$DOTFILES_HOME/scripts"
 DOTFILE_HOME_SCRIPTS_EDITORS_FILE="$DOTFILES_HOME_SCRIPTS/default-editor.sh" 
 source $DOTFILE_HOME_SCRIPTS_EDITORS_FILE
 
-# Load Plugin manager
-source "${DOTFILES_HOME_ZSH_PLUGIN_MANAGERS}/zinit.zsh"
+
 # --- Aliases ---
 source "${DOTFILES_HOME}/shell-common/aliases"
 
+
+# --- Load Plugin Manager ---
+source "${DOTFILES_HOME_ZSH_PLUGINS}/zinit/init.zsh"
+
+# --- Completions ---
+
+# Snippet-Store Completions
+#compdef _snippet_box snippet-box
+source ~/.snippet-store-completion
+
+zinit light zsh-users/zsh-completions
 
