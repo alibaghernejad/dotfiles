@@ -64,3 +64,6 @@ zstyle ':fzf-tab:complete:cd:*' fzf-preview 'ls --color $realpath'
 # Add Preview capability for Zoxide
 zstyle ':fzf-tab:complete:__zocide_z:*' fzf-preview 'ls --color $realpath'
 
+# --- Suggestions ---
+zinit light zsh-users/zsh-autosuggestions
+
