@@ -51,3 +51,16 @@ zinit light Aloxaf/fzf-tab
 # Disable default ZSH Completion menu
 zstyle ':completion:*' menu no
 
+# Configure completions to be case-insensitive
+zstyle ':completion:*' matcher-list 'm:{a-z}={A-Za-z}'
+
+# Configure to have colors for files and folder
+# It's in addition to overriding the `ls` command in aliases.
+zstyle ':completion:*' list-colors '${(s.:.)LS_COLORS}'
+
+# Add Preview capability for the File and Folders completions
+zstyle ':fzf-tab:complete:cd:*' fzf-preview 'ls --color $realpath'
+
+# Add Preview capability for Zoxide
+zstyle ':fzf-tab:complete:__zocide_z:*' fzf-preview 'ls --color $realpath'
+
