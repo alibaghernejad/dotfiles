@@ -47,3 +47,7 @@ zinit light zsh-users/zsh-completions
 # Replaces already exists completion menu with a new FZF-powered one.
 zinit light Aloxaf/fzf-tab
 
+# Completion Styles
+# Disable default ZSH Completion menu
+zstyle ':completion:*' menu no
+
