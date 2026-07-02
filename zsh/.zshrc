@@ -67,3 +67,11 @@ zstyle ':fzf-tab:complete:__zocide_z:*' fzf-preview 'ls --color $realpath'
 # --- Suggestions ---
 zinit light zsh-users/zsh-autosuggestions
 
+
+# --- Load Completions ---
+autoload -Uz compinit && compinit
+
+# After autoload command
+# Used by Zinit to replay all cached completions, which is recommended by Documentation
+zinit cdreplay -q
+
