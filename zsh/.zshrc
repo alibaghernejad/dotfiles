@@ -75,3 +75,9 @@ autoload -Uz compinit && compinit
 # Used by Zinit to replay all cached completions, which is recommended by Documentation
 zinit cdreplay -q
 
+# --- Load Propmpt ---
+source "${DOTFILES_HOME_ZSH_PROMPTS}/powerlevel10k/zinit.zsh"
+
+# To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
+[[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
+
