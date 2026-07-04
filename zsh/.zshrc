@@ -81,3 +81,7 @@ source "${DOTFILES_HOME_ZSH_PROMPTS}/powerlevel10k/zinit.zsh"
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
 
+#--- Key Bindings ---
+# Enbale EMACS Standard Key-Bindings
+bindkey -e
+
