@@ -85,3 +85,10 @@ source "${DOTFILES_HOME_ZSH_PROMPTS}/powerlevel10k/zinit.zsh"
 # Enbale EMACS Standard Key-Bindings
 bindkey -e
 
+# Override Cycling through History Commands
+# Even though enabling EMACS mode (bindkey -e), inherit the default standard key-bindings (like C-p/C-n), but 
+# Overriding them allows the user to cycle through the results that match the prefix. What the default behaviour doesn't provides.
+# E.g. Typing `curl` and then C-p|C-n will respect the prefix and show History Items that starts with this `curl`.
+bindkey '^p' history-search-backward
+bindkey '^n' history-search-forward
+
