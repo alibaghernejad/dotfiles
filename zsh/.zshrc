@@ -95,3 +95,8 @@ bindkey '^n' history-search-forward
 # Used to delete text chunks
 bindkey '^[w' kill-region
 
+#--- HISTORY ---
+# How many commands to keep in the current session's memory
+# Short-Term Memory (The RAM component)
+HISTSIZE=10000
+
