@@ -100,3 +100,7 @@ bindkey '^[w' kill-region
 # Short-Term Memory (The RAM component)
 HISTSIZE=10000
 
+# How many commands to save in your history file (~/.bash_history)
+# -Logn-term Memory (The DISK Component)
+SAVEHIST=50000
+
