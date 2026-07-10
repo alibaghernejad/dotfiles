@@ -104,3 +104,13 @@ HISTSIZE=10000
 # -Logn-term Memory (The DISK Component)
 SAVEHIST=50000
 
+# The file used to store all command history.
+HISTFILE=~/.zsh_history
+
+# Remove duplicate entries within the history file.
+HISTDUP=erase
+
+# Record the timestamp of when the command was run
+# This is incredibly helpful for debugging or looking back at what you did yesterday
+HISTTIMEFORMAT="%F %T "
+
