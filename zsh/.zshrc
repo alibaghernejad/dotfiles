@@ -114,3 +114,7 @@ HISTDUP=erase
 # This is incredibly helpful for debugging or looking back at what you did yesterday
 HISTTIMEFORMAT="%F %T "
 
+# ZSH History Options
+# Append commands to the history file instead of overwriting it.
+setopt appendhistory
+
