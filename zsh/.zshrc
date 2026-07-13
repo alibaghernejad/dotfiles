@@ -118,3 +118,6 @@ HISTTIMEFORMAT="%F %T "
 # Append commands to the history file instead of overwriting it.
 setopt appendhistory
 
+# Share command history across all active ZSH sessions simultaneously.
+setopt sharehistory
+
