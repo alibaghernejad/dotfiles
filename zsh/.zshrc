@@ -121,3 +121,9 @@ setopt appendhistory
 # Share command history across all active ZSH sessions simultaneously.
 setopt sharehistory
 
+# Prevent commands from being saved to history by adding a leading space.
+# - This reduces redundant/duplicate entries in the history file.
+# - It is useful for preventing sensitive information from being recorded.
+# - While using a secret manager like `Pass` is highly recommended, 
+#   this provides an extra layer of protection when using secrets in any shell.
+setopt hist_ignore_space
