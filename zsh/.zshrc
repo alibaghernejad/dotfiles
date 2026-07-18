@@ -127,3 +127,8 @@ setopt sharehistory
 # - While using a secret manager like `Pass` is highly recommended, 
 #   this provides an extra layer of protection when using secrets in any shell.
 setopt hist_ignore_space
+# Prevents the same command from appearing twice in a row
+setopt hist_ignore_dups
+setopt hist_ignore_all_dups
+setopt hist_save_no_dups
+setopt hist_find_no_dups
