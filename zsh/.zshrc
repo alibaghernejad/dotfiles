@@ -139,3 +139,6 @@ setopt hist_find_no_dups
 # Source FZF bindings into the shell emulator
 #source <(fzf --zsh)
 eval "$(fzf --zsh)"
+# Zoxide Integration
+eval "$(zoxide init  zsh)"
+
